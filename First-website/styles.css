@@ -1,0 +1,62 @@
+#style1 {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: "Lucida Console";
+    font-size: 32px;
+    /*font-style: normal;*/
+}
+
+li{color: white}
+
+
+
+body{
+    background-color: black;
+}
+
+.firsttext {
+    color: red;
+}
+    
+
+.glow {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  font-size: 40px;
+  color: #fff;
+  border: 1px solid #00e1ff;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+    @keyframes flash {
+  /* (B1) FROM RED */
+  from {
+    text-shadow:
+    0 0 5px #fc0303, 0 0 10px #fc0303,
+    0 0 20px #fc0303, 0 0 40px #fc0303;
+  }
+  /* (B2) TO BLUE */
+  to {
+    text-shadow:
+    0 0 5px #03cafc, 0 0 10px #03cafc,
+    0 0 20px #03cafc, 0 0 40px #03cafc;
+  }
+}
+
+/* (C) ATTACH ANIMATION */
+/* ANIMATION: KEYFRAMES DURATION FUNCTION REPEAT DIRECTION */
+.fglow { animation: flash 0.2s ease infinite alternate; }
+}
